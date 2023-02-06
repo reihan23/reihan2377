@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form class="form-wrapper" >
+                <input id="nik" class="input-form" type="number" placeholder="NIK">
+                <input id="nama_lengkap" class="input-form" type="text" placeholder="Nama Lengkap">
+                <div class="button-grup">
+                    <a class="button" onclick="handleSubmit(event)">Saya pengguna baru</form></a>
+                    <button class="button" onclick="handleSubmit(event)">Login</button>
+                </div>
+        </form>
+    </div>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const nik = document.getElementById("nik").value;
+            const nama_lengkap = document.getElementById("nama_lengkap").value;
+
+            //handle login
+            if (nik === "123" && nama_lengkap === "hanz") {
+                window.location.replace("C:/Users/RPL/Documents/ujikom/dasboard.html");
+            } else {
+                alert("lu salah bang");
+            }
+            console.log('Javascript terload');
+        }
+    </script>
+</body>
+</html>

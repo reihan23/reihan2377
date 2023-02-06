@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div onclick="handlemenu('satu')">menu1</div>
+    <div onclick="handlemenu('dua')">menu2</div>
+    <div onclick="handlemenu('tiga')">menu3</div>
+
+    <hr />
+
+    <div class="item" id="menu1">isi1</div>
+    <div class="item">isi2</div>
+    <div class="item">isi3</div>
+
+    <script>
+       
+        function handlemenu(jamal) {
+            const elBaru = document.querySelectorAll("item");
+            console.log(jamal);
+
+            if(jamal === "satu"){
+                elBaru.forEach((elemen, index) => {
+                    if (index != 0) {
+                        elemen.classList.add("hidden")
+                    console.log(index);
+                    }
+                });
+            }
+            else if (jamal === "dua") {
+                elBaru.forEach((elemen, index) => {
+                    if (index != 2) {
+                        elemen.classList.add("hidden")
+                    console.log(index);
+                    }
+                });
+            }
+            else{
+                elBaru.forEach((elemen, index) => {
+                    if (index != 2) {
+                        elemen.classList.add("hidden")
+                    console.log(index);
+                    }
+                });
+            }
+            // const elemenmenu1 = document.
+            // getElementById("menu1")
+
+            // elemenMenu1.style.color = "red";
+            // elemenMenu1.style.color = "e"
+            // return console.log(elemenmenu1);
+
+            // const elBaru = document.querySelector("item");
+            // console.log(elBaru);
+
+        }
+    </script>
+</body>
+</html>

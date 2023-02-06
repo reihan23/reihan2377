@@ -1,0 +1,74 @@
+* {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0px;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-image: url('../images/latar.png');
+}
+.form-wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.input-form {
+   min-width: 300px;
+   padding: 10px;
+   outline: none;
+   border: 1px solid transparent;
+   border-radius: 5px;
+}
+.button {
+   text-decoration: none;
+}
+.button-grup {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.button {
+   border: 1px solid grey;
+   font-size: 15px;
+   border-radius: 20px;
+   text-align: center;
+   color: black;
+   width: 150px;
+   padding: 5px;
+   background-color: rgb(255, 207, 144);
+}
+
+/* tambahan */
+/* .container {
+   width: 700px;
+   height: 200px;
+   margin: 100px auto;
+   border: 2px solid #000;
+   display: flex;
+   align-items: center;
+}
+.kotak {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   background-image: url('../images/apa.png');
+   animation: bergerak 4s 1s infinite linear alternate, berputar 1s infinite linear alternate;
+}
+@keyframes bergerak {
+   to {
+      transform: translateX(750px);
+      -webkit-transform: translateX(750px);
+      -moz-transform: translateX(750px);
+      -ms-transform: translateX(750px);
+      -o-transform: translateX(750px);
+   }
+}
+@keyframes berputar {
+   to {
+      transform: rotate(180deg);
+   }
+} */
